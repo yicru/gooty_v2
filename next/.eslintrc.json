@@ -1,3 +1,25 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "plugins": [
+    "simple-import-sort",
+    "typescript-sort-keys",
+    "sort-keys-fix",
+    "sort-destructure-keys"
+  ],
+  "rules": {
+    "sort-keys-fix/sort-keys-fix": "warn",
+    "sort-destructure-keys/sort-destructure-keys": "warn",
+    "simple-import-sort/imports": "warn",
+    "simple-import-sort/exports": "warn",
+    "typescript-sort-keys/interface": "warn",
+    "typescript-sort-keys/string-enum": "warn",
+
+    "@typescript-eslint/no-unused-vars": ["warn", { "varsIgnorePattern": "^_" }]
+  }
 }

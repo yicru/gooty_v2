@@ -1,0 +1,8 @@
+.next
+
+package.json
+yarn.lock
+
+node_modules
+
+tsconfig.json
